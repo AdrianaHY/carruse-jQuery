@@ -15,3 +15,6 @@ body{
 img{
   width:80%;
 }
+.display-none{
+  display: none;
+}
