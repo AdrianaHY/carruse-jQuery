@@ -30,3 +30,63 @@ $(document).ready(function(){
     $("#imagenCinco").show();
   });
 });
+
+//funciones para las flechitas
+var contadorSiguiente=0;
+var contadorAnterior=0;
+$("#siguiente").click(function(){
+  if(contadorSiguiente==0){
+    $("img").hide();
+    $("#imagenUno").next().show();
+    contadorSiguiente++;
+  }
+  else if(contadorSiguiente==1){
+    $("img").hide();
+    $("#imagenDos").next().show();
+    contadorSiguiente++;
+  }
+  else if(contadorSiguiente==2){
+    $("img").hide();
+    $("#imagenTres").next().show();
+    contadorSiguiente++;
+  }
+  else if(contadorSiguiente==3){
+    $("img").hide();
+    $("#imagenCuatro").next().show();
+    contadorSiguiente;
+  }
+  else if(contadorSiguiente==4){
+    $("img").hide();
+    $("#imagenCinco").next().show();
+    contadorSiguiente++;
+  }
+});
+
+//anterior
+$("#anterior").click(function(){
+  if(contadorAnterior==0){
+    $("img").hide();
+    $("#imagenCinco").show();
+    contadorAnterior++;
+  }
+  else if(contadorAnterior==1){
+    $("img").hide();
+    $("#imagenUno").show();
+    contadorAnterior++;
+  }
+  else if(contadorAnterior==2){
+    $("img").hide();
+    $("#imagenDos").show();
+    contadorAnterior++;
+  }
+  else if(contadorAnterior==3){
+    $("img").hide();
+    $("#imagenTres").show();
+    contadorAnterior++;
+  }
+  else if(contadorAnterior==4){
+    $("img").hide();
+    $("#imagenCuatro").show();
+    contadorAnterior++;
+  }
+});
